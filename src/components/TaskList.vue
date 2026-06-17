@@ -4,7 +4,7 @@
       <!-- :key="task.id" this task has a unique id
        :task="task" this sends this task to the TaskItem component
        $event has the id of the task -->
-      <TaskItem
+    <TaskItem
       v-for="task in tasks"
       :key="task.id" 
       :task="task"

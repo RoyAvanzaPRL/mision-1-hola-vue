@@ -25,8 +25,9 @@ const emit = defineEmits<{
 
 // When you click the button
 function formSubmit(){
-  if (newTask.value.trim()) {
-    emit("addTask", newTask.value.trim())
+  const tri = newTask.value.trim()
+  if (tri) {
+    emit("addTask", tri)
     newTask.value = "";
   }
 }
